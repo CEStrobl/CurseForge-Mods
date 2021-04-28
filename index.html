@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GitHub Web Hosting Tutorial</title>
+</head>
+<script src="script.js"></script>
+<body>
+
+
+  
+
+<div class="hero">
+  <div class="text">
+    <h1>Curse Forge Mods Tutorial</h1>
+    <p>in only #### steps!</p>
+  </div>
+</div>
+
+<!-- <div class="main">
+<h3>itty bitty things to notice:</h3>
+<p>
+  <ul>
+    <li>
+      idk if everything is going to work on mac ive never tested it but you can try it anyway if u want
+    </li>
+    <li>
+      this isnt a great method if you want to continually update your site. its more of just if you want to get it up and running quickly. 
+    </li>
+    <li>
+      if you do want to update your site often, i recommend installing the <a href="https://desktop.github.com/"><strong>github desktop app</strong></a> and watching a youtube video on setting it up. the desktop app will sync live changes but i personally find it to be kinda confusing. i'll try to make a tutorial on that one day...
+    </li>
+  </ul>
+</p>
+</div> -->
+
+
+
+
+
+<br><br><br>
+
+<div class="tab">
+  <button class="tablinks" 
+  onclick="openCity(event, 's1')" id="defaultOpen">
+  Step 1
+  </button>
+
+  <button class="tablinks" 
+  onclick="openCity(event, 's2')">
+  Step 2
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's3')">Step 3
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's4')">Step 4
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's5')">Step 5
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's6')">Step 6
+  </button>
+
+    <button class="tablinks" 
+    onclick="openCity(event, 's7')">Step 7
+  </button>
+
+
+
+</div>
+      
+  <div id="s1" class="tabcontent">
+    <div class="row">
+      <div class="column" style="width: 30%;">
+        <h3>Step 1</h3>
+        <p>Download the CurseForage launcher at <a href="https://curseforge.overwolf.com/"><strong>curseforge.overwolf.com</strong></a> (if you don't have it installed already)</p>
+      </div>
+      <div class="column">
+        <img src="step1.png" alt="">
+      </div>
+    </div>
+        
+  </div>
+
+  <div id="s2" class="tabcontent">
+    <div class="row">
+      <div class="column" style="width: 30%;">
+        <h3>Step 2</h3>
+        <p>Make sure you download the <strong>totally</strong> not sketchy file that your awesome friend, Charlot, provided you with</p>
+      </div>
+      <div class="column">
+        <img src="step2.png" alt="">
+        <img src="step2a.png" alt="">
+      </div>
+    </div>
+        
+  </div>
+
+  <div id="s3" class="tabcontent">
+    <div class="row">
+      <div class="column"style="width: 30%;">
+        <h3>Step 3</h3>
+        <p>Now open CurseForage and click 'Minecraft'</p>
+        
+      </div>
+      <div class="column">
+        <img src="step3.png" alt="">
+      </div>
+    </div>
+        
+  </div>
+
+
+  <div id="s4" class="tabcontent">
+    <div class="row">
+      <div class="column"style="width: 30%;">
+        <h3>Step 4</h3>
+        <p>Click 'Create new profile'</p>
+      </div>
+      <div class="column">
+        <img src="step4.png" alt="">
+      </div>
+    </div>
+        
+  </div>
+
+  <div id="s5" class="tabcontent">
+    <div class="row">
+      <div class="column"style="width: 30%;">
+        <h3>Step 5</h3>
+        <p>Click 'import'</p>
+      </div>
+      <div class="column">
+        <img src="step5.png" alt="">
+      </div>
+    </div>
+        
+  </div>
+
+  <div id="s6" class="tabcontent">
+    <div class="row">
+      <div class="column"style="width: 30%;">
+        <h3>Step 6</h3>
+        <p>Select that awesome mod pack from earlier</p>
+        
+      </div>
+      <div class="column">
+        <img src="step6.png" alt="">
+
+      </div>
+    </div>
+        
+  </div>
+
+  <div id="s7" class="tabcontent">
+    <div class="row">
+      <div class="column"style="width: 30%;">
+        <h3>Step 7</h3>
+        <p>Yayayayayayay now its there and now you can play it so play it now and you better have fun....... <strong>or else......</strong></p>
+        
+        
+      </div>
+      <div class="column">
+        <img src="step7.png" alt="">
+
+      </div>
+    </div>
+        
+  </div>
+
+        
+  </div>
+
+
+</body>
+<script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</html>
